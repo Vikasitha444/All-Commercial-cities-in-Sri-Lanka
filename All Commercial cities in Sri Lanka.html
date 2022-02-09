@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #Cities_colombo,
+        #Cities_mathara,
+        #Cities_gampha,
+        #Cities_jaffna,
+        #Cities_kilinochchi,
+        #Cities_Mannar,
+        #Cities_Mullaitivu,
+        #Cities_Vavuniya,
+        #Cities_Puttalam,
+        #Cities_Kurunegala,
+        #Cities_Kalutara,
+        #Cities_Anuradhapura,
+        #Cities_Polonnaruwa,
+        #Cities_Matale,
+        #Cities_Kandy,
+        #Cities_Nuwara_Eliya,
+        #Cities_Kegalle,
+        #Cities_Ratnapura,
+        #Cities_Trincomalee,
+        #Cities_Batticaloa,
+        #Cities_Ampara,
+        #Cities_Badulla,
+        #Cities_Monaragala,
+        #Cities_Hambantota,
+        #Cities_Galle {
+            display: none;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+        integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link href="jquery plugins/Typeahead/jquery.flexdatalist.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- embed jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <select name="" id="selectSubject">
+        <option value="">--Select opiton--</option>
+        <option data-value='both' value='whole country'>Whole Country</option>
+        <option data-value='both' value='Colombo'>Colombo</option>
+        <option data-value='both' value='Mathara'>Mathara</option>
+        <option data-value='both' value='Jaffna'>Jaffna</option>
+        <option data-value='both' value='Kilinochchi'>Kilinochchi</option>
+        <option data-value='both' value='Mannar'>Mannar</option>
+        <option data-value='both' value='Mullaitivu'>Mullaitivu</option>
+        <option data-value='both' value='Vavuniya'>Vavuniya</option>
+        <option data-value='both' value='Puttalam'>Puttalam</option>
+        <option data-value='both' value='Kurunegala'>Kurunegala</option>
+        <option data-value='both' value='Gampaha'>Gampaha</option>
+        <option data-value='both' value='Kalutara'>Kalutara</option>
+        <option data-value='both' value='Anuradhapura'>Anuradhapura</option>
+        <option data-value='both' value='Polonnaruwa'>Polonnaruwa</option>
+        <option data-value='both' value='Matale'>Matale</option>
+        <option data-value='both' value='Kandy'>Kandy</option>
+        <option data-value='both' value='Nuwara Eliya'>Nuwara Eliya</option>
+        <option data-value='both' value='Kegalle'>Kegalle</option>
+        <option data-value='both' value='Ratnapura'>Ratnapura</option>
+        <option data-value='both' value='Trincomalee'>Trincomalee</option>
+        <option data-value='both' value='Batticaloa'>Batticaloa</option>
+        <option data-value='both' value='Ampara'>Ampara</option>
+        <option data-value='both' value='Badulla'>Badulla</option>
+        <option data-value='both' value='Monaragala'>Monaragala</option>
+        <option data-value='both' value='Hambantota'>Hambantota</option>
+        <option data-value='both' value='Galle'>Galle</option>
+    </select>
+
+    <select name='' id='selected_nothing' style='width: 120px; height:30px;' required>
+        <option value=''>- Whole Country -</option>
+    </select>
+
+
+    <select name='' id='Cities_colombo' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Akuregoda">Akuregoda</option>
+        <option value="Ambuldeniya">Ambuldeniya</option>
+        <option value="Angulana">Angulana</option>
+        <option value="Arangala">Arangala</option>
+        <option value="Arawwala">Arawwala</option>
+        <option value="Athurugiriya">Athurugiriya</option>
+        <option value="Attidiya">Attidiya</option>
+        <option value="Avissawella">Avissawella</option>
+        <option value="Batawala">Batawala</option>
+        <option value="Battaramulla">Battaramulla</option>
+        <option value="Batugampola">Batugampola</option>
+        <option value="Beddagana">Beddagana</option>
+        <option value="Bellanthara">Bellanthara</option>
+        <option value="Bellanwila">Bellanwila</option>
+        <option value="Bokundara">Bokundara</option>
+        <option value="Bomiriya">Bomiriya</option>
+        <option value="Bope">Bope</option>
+        <option value="Boralesgamuwa">Boralesgamuwa</option>
+        <option value="Borupana">Borupana</option>
+        <option value="Buthgamuwa">Buthgamuwa</option>
+        <option value="Colombo">Colombo</option>
+        <option value="Colombo 01">Colombo 01</option>
+        <option value="Colombo 02">Colombo 02</option>
+        <option value="Colombo 03">Colombo 03</option>
+        <option value="Colombo 04">Colombo 04</option>
+        <option value="Colombo 05">Colombo 05</option>
+        <option value="Colombo 06">Colombo 06</option>
+        <option value="Colombo 07">Colombo 07</option>
+        <option value="Colombo 08">Colombo 08</option>
+        <option value="Colombo 09">Colombo 09</option>
+        <option value="Colombo 10">Colombo 10</option>
+        <option value="Colombo 11">Colombo 11</option>
+        <option value="Colombo 12">Colombo 12</option>
+        <option value="Colombo 13">Colombo 13</option>
+        <option value="Colombo 14">Colombo 14</option>
+        <option value="Colombo 15">Colombo 15</option>
+        <option value="Dedigamuwa">Dedigamuwa</option>
+        <option value="Dehiwala">Dehiwala</option>
+        <option value="Delkanda">Delkanda</option>
+        <option value="Deltara">Deltara</option>
+        <option value="Egoda Uyana">Egoda Uyana</option>
+        <option value="Ethul Kotte">Ethul Kotte</option>
+        <option value="Gangodawilla">Gangodawilla</option>
+        <option value="Godagama">Godagama</option>
+        <option value="Gonapola">Gonapola</option>
+        <option value="Gothatuwa">Gothatuwa</option>
+        <option value="Habarakada">Habarakada</option>
+        <option value="Handapangoda">Handapangoda</option>
+        <option value="Hanwella">Hanwella</option>
+        <option value="Hewagama">Hewagama</option>
+        <option value="Himbutana">Himbutana</option>
+        <option value="Hokandara">Hokandara</option>
+        <option value="Homagama">Homagama</option>
+        <option value="Idama">Idama</option>
+        <option value="Indibedda">Indibedda</option>
+        <option value="Kaduwela">Kaduwela</option>
+        <option value="Kahathuduwa">Kahathuduwa</option>
+        <option value="Kalubowila">Kalubowila</option>
+        <option value="Karagampitiya">Karagampitiya</option>
+        <option value="Katubedda">Katubedda</option>
+        <option value="Katuwawala">Katuwawala</option>
+        <option value="Kesbewa">Kesbewa</option>
+        <option value="Kohuwela">Kohuwela</option>
+        <option value="Kolonnawa">Kolonnawa</option>
+        <option value="Koralawella">Koralawella</option>
+        <option value="Kosgama">Kosgama</option>
+        <option value="Koswatta">Koswatta</option>
+        <option value="Kotikawatta">Kotikawatta</option>
+        <option value="Kottawa">Kottawa</option>
+        <option value="Kotuwila">Kotuwila</option>
+        <option value="Lunawa">Lunawa</option>
+        <option value="Madapatha">Madapatha</option>
+        <option value="Madiwela">Madiwela</option>
+        <option value="Maharagama">Maharagama</option>
+        <option value="Makumbura">Makumbura</option>
+        <option value="Malabe">Malabe</option>
+        <option value="Mattegoda">Mattegoda</option>
+        <option value="Meegoda">Meegoda</option>
+        <option value="Meepe">Meepe</option>
+        <option value="Mirihana">Mirihana</option>
+        <option value="Moragahahena">Moragahahena</option>
+        <option value="Moratuwa">Moratuwa</option>
+        <option value="Mount Lavinia">Mount Lavinia</option>
+        <option value="Mullegama">Mullegama</option>
+        <option value="Mulleriyawa">Mulleriyawa</option>
+        <option value="Nawagamuwa">Nawagamuwa</option>
+        <option value="Nawala">Nawala</option>
+        <option value="Nawinna">Nawinna</option>
+        <option value="Nedimala">Nedimala</option>
+        <option value="Nugegoda">Nugegoda</option>
+        <option value="Orugodawatta">Orugodawatta</option>
+        <option value="Oruwala">Oruwala</option>
+        <option value="Padukka">Padukka</option>
+        <option value="Pamankada">Pamankada</option>
+        <option value="Panagoda">Panagoda</option>
+        <option value="Pannipitiya">Pannipitiya</option>
+        <option value="Pelawatta">Pelawatta</option>
+        <option value="Pepiliyana">Pepiliyana</option>
+        <option value="Piliyandala">Piliyandala</option>
+        <option value="Pita Kotte">Pita Kotte</option>
+        <option value="Pitipana Homagama">Pitipana Homagama</option>
+        <option value="Polgasowita">Polgasowita</option>
+        <option value="Puwakpitiya">Puwakpitiya</option>
+        <option value="Rajagiriya">Rajagiriya</option>
+        <option value="Ranala">Ranala</option>
+        <option value="Raththanapitiya">Raththanapitiya</option>
+        <option value="Ratmalana">Ratmalana</option>
+        <option value="Rawathawatte">Rawathawatte</option>
+        <option value="Rukmalgama">Rukmalgama</option>
+        <option value="Siddamulla">Siddamulla</option>
+        <option value="Soysapura">Soysapura</option>
+        <option value="Talawatugoda">Talawatugoda</option>
+        <option value="Thalahena">Thalahena</option>
+        <option value="Thalangama">Thalangama</option>
+        <option value="Thalapathpitiya">Thalapathpitiya</option>
+        <option value="Tummodara">Tummodara</option>
+        <option value="Udahamulla">Udahamulla</option>
+        <option value="Waga">Waga</option>
+        <option value="Watareka">Watareka</option>
+        <option value="1000091">Welivita</option>
+        <option value="Wellampitiya">Wellampitiya</option>
+        <option value="Werahara">Werahara</option>
+        <option value="Wijerama">Wijerama</option>
+    </select>
+
+    <select name='' id='Cities_mathara' style='width: 120px; height:30px;' required>
+        <option value="1000117">All Cities</option>
+        <option value="Akuressa">Akuressa</option>
+        <option value="Bengamuwa">Bengamuwa</option>
+        <option value="Deiyandara">Deiyandara</option>
+        <option value="Deniyaya">Deniyaya</option>
+        <option value="Dikwella">Dikwella</option>
+        <option value="Hakmana">Hakmana</option>
+        <option value="Horapawita">Horapawita</option>
+        <option value="Kamburupitiya">Kamburupitiya</option>
+        <option value="Kekanadura">Kekanadura</option>
+        <option value="Kumbalgama">Kumbalgama</option>
+        <option value="Matara">Matara</option>
+        <option value="Mirissa">Mirissa</option>
+        <option value="Morawaka">Morawaka</option>
+        <option value="Mulatiyana">Mulatiyana</option>
+        <option value="Pahala Millawa">Pahala Millawa</option>
+        <option value="Thihagoda">Thihagoda</option>
+        <option value="Urubokka">Urubokka</option>
+        <option value="Urumutta">Urumutta</option>
+        <option value="Weligama">Weligama</option>
+    </select>
+
+    <select name='' id='Cities_gampha' style='width: 120px; height:30px;' required>
+        <option value="1000117">All Cities</option>
+        <option value="Aldeniya">Aldeniya</option>
+        <option value="Ambepussa">Ambepussa</option>
+        <option value="Attanagalla">Attanagalla</option>
+        <option value="Balummahara">Balummahara</option>
+        <option value="Bandigoda">Bandigoda</option>
+        <option value="Batuwatta">Batuwatta</option>
+        <option value="Bemmulla">Bemmulla</option>
+        <option value="Biyagama">Biyagama</option>
+        <option value="Bollatha">Bollatha</option>
+        <option value="Bopitiya">Bopitiya</option>
+        <option value="Bulugahagoda">Bulugahagoda</option>
+        <option value="Buthpitiya">Buthpitiya</option>
+        <option value="Dagonna">Dagonna</option>
+        <option value="Dalugama">Dalugama</option>
+        <option value="Dekatana">Dekatana</option>
+        <option value="Delathura">Delathura</option>
+        <option value="Delgoda">Delgoda</option>
+        <option value="Dewalapola">Dewalapola</option>
+        <option value="Divulapitiya">Divulapitiya</option>
+        <option value="Dompe">Dompe</option>
+        <option value="Dungalpitiya">Dungalpitiya</option>
+        <option value="Ekala">Ekala</option>
+        <option value="Enderamulla">Enderamulla</option>
+        <option value="Galahitiyawa">Galahitiyawa</option>
+        <option value="Gampaha">Gampaha</option>
+        <option value="Ganemulla">Ganemulla</option>
+        <option value="Gonawala">Gonawala</option>
+        <option value="Heiyanthuduwa">Heiyanthuduwa</option>
+        <option value="Hekitta">Hekitta</option>
+        <option value="Hendala">Hendala</option>
+        <option value="Hunupitiya">Hunupitiya</option>
+        <option value="Imbulgoda">Imbulgoda</option>
+        <option value="Ja-Ela">Ja-Ela</option>
+        <option value="Kadawatha">Kadawatha</option>
+        <option value="Kadirana">Kadirana</option>
+        <option value="Kalagedihena">Kalagedihena</option>
+        <option value="Kaleliya">Kaleliya</option>
+        <option value="Kaluaggala">Kaluaggala</option>
+        <option value="Kandana">Kandana</option>
+        <option value="Kandawala">Kandawala</option>
+        <option value="Kanuwana">Kanuwana</option>
+        <option value="Kapuwatta">Kapuwatta</option>
+        <option value="Katana">Katana</option>
+        <option value="Katunayake">Katunayake</option>
+        <option value="Kelaniya">Kelaniya</option>
+        <option value="Kimbulapitiya">Kimbulapitiya</option>
+        <option value="Kiribathgoda">Kiribathgoda</option>
+        <option value="Kirillawala">Kirillawala</option>
+        <option value="Kirindiwela">Kirindiwela</option>
+        <option value="Kochchikade">Kochchikade</option>
+        <option value="Kotadeniyawa">Kotadeniyawa</option>
+        <option value="Kotugoda">Kotugoda</option>
+        <option value="Kurana">Kurana</option>
+        <option value="Mabima">Mabima</option>
+        <option value="Mabodale">Mabodale</option>
+        <option value="Mabole">Mabole</option>
+        <option value="Mahabage">Mahabage</option>
+        <option value="Mahara">Mahara</option>
+        <option value="Makewita">Makewita</option>
+        <option value="Makola">Makola</option>
+        <option value="Malwana">Malwana</option>
+        <option value="Marandagahamula">Marandagahamula</option>
+        <option value="Mawaramandiya">Mawaramandiya</option>
+        <option value="Minuwangoda">Minuwangoda</option>
+        <option value="Mirigama">Mirigama</option>
+        <option value="Miriswatta">Miriswatta</option>
+        <option value="Mudungoda">Mudungoda</option>
+        <option value="Nagoda">Nagoda</option>
+        <option value="Nayakkanda">Nayakkanda</option>
+        <option value="Negombo">Negombo</option>
+        <option value="Nittambuwa">Nittambuwa</option>
+        <option value="Nivasipura">Nivasipura</option>
+        <option value="Niwandama">Niwandama</option>
+        <option value="Pamunugama">Pamunugama</option>
+        <option value="Pannala">Pannala</option>
+        <option value="Pasyala">Pasyala</option>
+        <option value="Peliyagoda">Peliyagoda</option>
+        <option value="Pethiyagoda">Pethiyagoda</option>
+        <option value="Pugoda">Pugoda</option>
+        <option value="Raddolugama">Raddolugama</option>
+        <option value="Ragama">Ragama</option>
+        <option value="Rillaulla">Rillaulla</option>
+        <option value="Sapugaskanda">Sapugaskanda</option>
+        <option value="Seeduwa">Seeduwa</option>
+        <option value="Siyambalape">Siyambalape</option>
+        <option value="Thihariya">Thihariya</option>
+        <option value="Thudella">Thudella</option>
+        <option value="Udugampola">Udugampola</option>
+        <option value="Udupila">Udupila</option>
+        <option value="Uswetakeiyawa">Uswetakeiyawa</option>
+        <option value="Veyangoda">Veyangoda</option>
+        <option value="Watinapaha">Watinapaha</option>
+        <option value="Wattala">Wattala</option>
+        <option value="Weligampitiya">Weligampitiya</option>
+        <option value="Welipillewa">Welipillewa</option>
+        <option value="Welisara">Welisara</option>
+        <option value="Weliveriya">Weliveriya</option>
+        <option value="Wewala">Wewala</option>
+    </select>
+
+
+
+
+    <select name='' id='Cities_jaffna' style='width: 120px; height:30px;' required>
+        <option value="1000117">All Cities</option>
+        <option value="Chavakachcheri">Chavakachcheri</option>
+        <option value="Chundikuli">Chundikuli</option>
+        <option value="Chunnakam">Chunnakam</option>
+        <option value="Jaffna">Jaffna</option>
+        <option value="Kaitadi">Kaitadi</option>
+        <option value="Kokuvil">Kokuvil</option>
+        <option value="Nallur">Nallur</option>
+        <option value="Nelliady">Nelliady</option>
+        <option value="Point Pedro">Point Pedro</option>
+        <option value="Sandilipay">Sandilipay</option>
+        <option value="Uduvil">Uduvil</option>
+        <option value="Urumpirai">Urumpirai</option>
+        <option value="Vaddukoddai">Vaddukoddai</option>
+        <option value="Valikamam">Valikamam</option>
+    </select>
+
+    <select name='' id='Cities_kilinochchi' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Karadippokku">Karadippokku</option>
+        <option value="Kilinochchi">Kilinochchi</option>
+        <option value="Poonakary">Poonakary</option>
+    </select>
+    </select>
+
+    <select name='' id='Cities_Mannar' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Mannar">Mannar</option>
+        <option value="Murunkan">Murunkan</option>
+        <option value="Nanattan">Nanattan</option>
+    </select>
+
+    <select name='' id='Cities_Mullaitivu' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Mankulam">Mankulam</option>
+        <option value="Pudukudiyirippu">Pudukudiyirippu</option>
+    </select>
+
+    <select name='' id='Cities_Vavuniya' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Vavuniya">Vavuniya</option>
+    </select>
+    </select>
+
+    <select name='' id='Cities_Puttalam' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Anamaduwa">Anamaduwa</option>
+        <option value="Chilaw">Chilaw</option>
+        <option value="Dankotuwa">Dankotuwa</option>
+        <option value="Kalpitiya">Kalpitiya</option>
+        <option value="Katuneriya">Katuneriya</option>
+        <option value="Madampe">Madampe</option>
+        <option value="Madurankuliya">Madurankuliya</option>
+        <option value="Mahawewa">Mahawewa</option>
+        <option value="Marawila">Marawila</option>
+        <option value="Nainamadama">Nainamadama</option>
+        <option value="Nattandiya">Nattandiya</option>
+        <option value="Nawagattegama">Nawagattegama</option>
+        <option value="Norachcholai">Norachcholai</option>
+        <option value="Puttalam">Puttalam</option>
+        <option value="Waikkal">Waikkal</option>
+        <option value="Wennappuwa">Wennappuwa</option>
+    </select>
+
+    <select name='' id='Cities_Kurunegala' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Alawwa">Alawwa</option>
+        <option value="Bingiriya">Bingiriya</option>
+        <option value="Boyagane">Boyagane</option>
+        <option value="Dambadeniya">Dambadeniya</option>
+        <option value="Dummalasuriya">Dummalasuriya</option>
+        <option value="Galgamuwa">Galgamuwa</option>
+        <option value="Giriulla">Giriulla</option>
+        <option value="Gokaralla">Gokaralla</option>
+        <option value="Hettipola">Hettipola</option>
+        <option value="Ibbagamuwa">Ibbagamuwa</option>
+        <option value="Kobeigane">Kobeigane</option>
+        <option value="Kuliyapitiya">Kuliyapitiya</option>
+        <option value="Kumbukgeta">Kumbukgeta</option>
+        <option value="Kumbukwewa">Kumbukwewa</option>
+        <option value="Kurunegala">Kurunegala</option>
+        <option value="Makandura">Makandura</option>
+        <option value="Malkaduwawa">Malkaduwawa</option>
+        <option value="Mallawapitiya">Mallawapitiya</option>
+        <option value="Mawathagama">Mawathagama</option>
+        <option value="Melsiripura">Melsiripura</option>
+        <option value="Narammala">Narammala</option>
+        <option value="Nikaweratiya">Nikaweratiya </option>
+        <option value="Pannala">Pannala</option>
+        <option value="Paragahadeniya">Paragahadeniya</option>
+        <option value="Polgahawela">Polgahawela</option>
+        <option value="Pothuhera">Pothuhera</option>
+        <option value="Ridigama">Ridigama</option>
+        <option value="Uyandana">Uyandana</option>
+        <option value="Wariyapola">Wariyapola</option>
+    </select>
+
+    <select name='' id='Cities_Kalutara' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Agalawatta">Agalawatta</option>
+        <option value="Alubomulla">Alubomulla</option>
+        <option value="Aluthgama">Aluthgama</option>
+        <option value="Aviththawa">Aviththawa</option>
+        <option value="Bandaragama">Bandaragama</option>
+        <option value="Beruwala">Beruwala</option>
+        <option value="Dharga Town">Dharga Town</option>
+        <option value="Dodangoda">Dodangoda</option>
+        <option value="Horana">Horana</option>
+        <option value="Horawala">Horawala</option>
+        <option value="Ingiriya">Ingiriya</option>
+        <option value="Kalutara">Kalutara</option>
+        <option value="Katukurunda">Katukurunda</option>
+        <option value="Maggona">Maggona</option>
+        <option value="Matugama">Matugama</option>
+        <option value="Meegahatenna">Meegahatenna</option>
+        <option value="Nagoda">Nagoda</option>
+        <option value="Paiyagala">Paiyagala</option>
+        <option value="Panadura">Panadura</option>
+        <option value="Pelawatta">Pelawatta</option>
+        <option value="Pokunuwita">Pokunuwita</option>
+        <option value="Wadduwa">Wadduwa</option>
+        <option value="Walallawita">Walallawita</option>
+        <option value="Waskaduwa">Waskaduwa</option>
+        <option value="Welipenna">Welipenna</option>
+    </select>
+
+    <select name='' id='Cities_Anuradhapura' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Anuradhapura">Anuradhapura</option>
+        <option value="Awukana">Awukana</option>
+        <option value="Kahatagasdigiliya">Kahatagasdigiliya</option>
+    </select>
+
+    <select name='' id='Cities_Polonnaruwa' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Hingurakgoda">Hingurakgoda</option>
+        <option value="Polonnaruwa">Polonnaruwa</option>
+    </select>
+
+    <select name='' id='Cities_Matale' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Dambulla">Dambulla</option>
+        <option value="Kaikawala">Kaikawala</option>
+        <option value="Matale">Matale</option>
+    </select>
+
+    <select name='' id='Cities_Kandy' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Akurana">Akurana</option>
+        <option value="Alawatugoda">Alawatugoda</option>
+        <option value="Ambatenna">Ambatenna</option>
+        <option value="Ampitiya">Ampitiya</option>
+        <option value="Aniwatta">Aniwatta</option>
+        <option value="Aruppola">Aruppola</option>
+        <option value="Asgiriya">Asgiriya</option>
+        <option value="Balagolla">Balagolla</option>
+        <option value="Daulagala">Daulagala</option>
+        <option value="Deltota">Deltota</option>
+        <option value="Digana">Digana</option>
+        <option value="Dodanwala">Dodanwala</option>
+        <option value="Galagedara">Galagedara</option>
+        <option value="Gampola">Gampola</option>
+        <option value="Gannoruwa">Gannoruwa</option>
+        <option value="Gelioya">Gelioya</option>
+        <option value="Gomagoda">Gomagoda</option>
+        <option value="Gunnepana">Gunnepana</option>
+        <option value="Handessa">Handessa</option>
+        <option value="Hunnasgiriya">Hunnasgiriya</option>
+        <option value="Kadugannawa">Kadugannawa</option>
+        <option value="Kandy">Kandy</option>
+        <option value="Katugastota">Katugastota</option>
+        <option value="Kengalla">Kengalla</option>
+        <option value="Kiribathkumbura">Kiribathkumbura</option>
+        <option value="Kundasale">Kundasale</option>
+        <option value="Lewella">Lewella</option>
+        <option value="Madawala Bazaar">Madawala Bazaar</option>
+        <option value="Mahaiyawa">Mahaiyawa</option>
+        <option value="Mahakanda">Mahakanda</option>
+        <option value="Mavilmada">Mavilmada</option>
+        <option value="Mulgampola">Mulgampola</option>
+        <option value="Nattarampotha">Nattarampotha</option>
+        <option value="Nawalapitiya">Nawalapitiya</option>
+        <option value="Nugawela">Nugawela</option>
+        <option value="Pallekele">Pallekele</option>
+        <option value="Pallekotuwa">Pallekotuwa</option>
+        <option value="Panideniya">Panideniya</option>
+        <option value="Peradeniya">Peradeniya</option>
+        <option value="Pilimatalawa">Pilimatalawa</option>
+        <option value="Polgolla">Polgolla</option>
+        <option value="Poojapitya">Poojapitya</option>
+        <option value="Talatuoya">Talatuoya</option>
+        <option value="Teldeniya">Teldeniya</option>
+        <option value="Tennekumbura">Tennekumbura</option>
+        <option value="Udahentenna">Udahentenna</option>
+        <option value="Ududumbara">Ududumbara</option>
+        <option value="Watadeniya">Watadeniya</option>
+        <option value="Watapuluwa">Watapuluwa</option>
+        <option value="Wattegama">Wattegama</option>
+    </select>
+
+    <select name='' id='Cities_Nuwara_Eliya' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Bogawantalawa">Bogawantalawa</option>
+        <option value="Ginigathena">Ginigathena</option>
+        <option value="Hatton">Hatton</option>
+        <option value="Kotagala">Kotagala</option>
+        <option value="Kotmale">Kotmale</option>
+        <option value="Nuwara Eliya">Nuwara Eliya</option>
+    </select>
+
+    <select name='' id='Cities_Kegalle' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Alawatura">Alawatura</option>
+        <option value="3212">Bulathkohupitiya</option>
+        <option value="Bulathkohupitiya">Dehiowita</option>
+        <option value="Galapitamada">Galapitamada</option>
+        <option value="Galigamuwa">Galigamuwa</option>
+        <option value="Hemmatagama">Hemmatagama</option>
+        <option value="Hiriwadunna">Hiriwadunna</option>
+        <option value="Kegalle">Kegalle</option>
+        <option value="Mawanella">Mawanella</option>
+        <option value="Rambukkana">Rambukkana</option>
+        <option value="Ruwanwella">Ruwanwella</option>
+        <option value="Warakapola">Warakapola</option>
+        <option value="Yatiyantota">Yatiyantota</option>
+    </select>
+
+    <select name='' id='Cities_Ratnapura' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Balangoda">Balangoda</option>
+        <option value="Eheliyagoda">Eheliyagoda</option>
+        <option value="Embilipitiya">Embilipitiya</option>
+        <option value="Kahawatta">Kahawatta</option>
+        <option value="Kuruwita">Kuruwita</option>
+        <option value="Nivitigala">Nivitigala</option>
+        <option value="Palmadulla">Palmadulla</option>
+        <option value="Parakaduwa">Parakaduwa</option>
+        <option value="Ratnapura">Ratnapura</option>
+    </select>
+
+    <select name='' id='Cities_Trincomalee' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Trincomalee">Trincomalee</option>
+    </select>
+
+    <select name='' id='Cities_Batticaloa' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Batticaloa">Batticaloa</option>
+        <option value="Eravur">Eravur</option>
+        <option value="Kattankudi">Kattankudi</option>
+        <option value="Oddamavadi">Oddamavadi</option>
+        <option value="Pasikudah">Pasikudah</option>
+        <option value="Valaichenai">Valaichenai</option>
+    </select>
+
+    <select name='' id='Cities_Ampara' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Addalachchenai">Addalachchenai</option>
+        <option value="Akkaraipaththu">Akkaraipaththu</option>
+        <option value="Alayadivembu">Alayadivembu</option>
+        <option value="Ampara">Ampara</option>
+        <option value="Kalmunai">Kalmunai</option>
+        <option value="Nintavur">Nintavur</option>
+        <option value="Oluvil">Oluvil</option>
+        <option value="Sainthamaruthu">Sainthamaruthu</option>
+        <option value="Samanthurai">Samanthurai</option>
+    </select>
+
+    <select name='' id='Cities_Badulla' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Badulla">Badulla</option>
+        <option value="Bandarawela">Bandarawela</option>
+        <option value="Diyatalawa">Diyatalawa</option>
+        <option value="Ella">Ella</option>
+        <option value="Gurutalawa">Gurutalawa</option>
+        <option value="Haputale">Haputale</option>
+        <option value="Koslanda">Koslanda</option>
+        <option value="Mahiyanganaya">Mahiyanganaya</option>
+        <option value="Mirahawatta">Mirahawatta</option>
+        <option value="Welimada">Welimada</option>
+    </select>
+
+    <select name='' id='Cities_Monaragala' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Bibile">Bibile</option>
+        <option value="Monaragala">Monaragala</option>
+    </select>
+
+    <select name='' id='Cities_Hambantota' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Beliatta">Beliatta</option>
+        <option value="Hambantota">Hambantota</option>
+        <option value="Kirinda">Kirinda</option>
+        <option value="Middeniya">Middeniya</option>
+        <option value="Ranna">Ranna</option>
+        <option value="Sooriyawewa">Sooriyawewa</option>
+        <option value="Tangalla">Tangalla</option>
+        <option value="Tissamaharama">Tissamaharama</option>
+        <option value="Walasmulla">Walasmulla</option>
+        <option value="Weeraketiya">Weeraketiya</option>
+        <option value="Weligatta">Weligatta</option>
+    </select>
+
+    <select name='' id='Cities_Galle' style='width: 120px; height:30px;' required>
+        <option value="All Cities">All Cities</option>
+        <option value="Ahangama">Ahangama</option>
+        <option value="Ahungalla">Ahungalla</option>
+        <option value="Akmeemana">Akmeemana</option>
+        <option value="Ambalangoda">Ambalangoda</option>
+        <option value="Baddegama">Baddegama</option>
+        <option value="Balapitiya">Balapitiya</option>
+        <option value="Dadalla">Dadalla</option>
+        <option value="Dodanduwa">Dodanduwa</option>
+        <option value="Elpitiya">Elpitiya</option>
+        <option value="Galle">Galle</option>
+        <option value="Gintota">Gintota</option>
+        <option value="Habaraduwa">Habaraduwa</option>
+        <option value="Hapugala">Hapugala</option>
+        <option value="Hikkaduwa">Hikkaduwa</option>
+        <option value="Imaduwa">Imaduwa</option>
+        <option value="Induruwa">Induruwa</option>
+        <option value="Kalegana">Kalegana</option>
+        <option value="Karapitiya">Karapitiya</option>
+        <option value="Mapalagama">Mapalagama</option>
+        <option value="Minuwangoda">Minuwangoda</option>
+        <option value="Pitigala">Pitigala</option>
+        <option value="Thalagaha">Thalagaha</option>
+        <option value="Udugama">Udugama</option>
+        <option value="Unawatuna">Unawatuna</option>
+        <option value="Unenwitiya">Unenwitiya</option>
+        <option value="Wanduramba">Wanduramba</option>
+        <option value="Yakkalamulla">Yakkalamulla</option>
+    </select>
+
+
+
+
+
+    <script>
+        $('#selectSubject').change(function () {
+            var seleted_option = $('#selectSubject :selected').text();
+
+            if (seleted_option == 'Colombo') {
+                $('#Cities_colombo').show();
+
+                $('#selected_nothing').hide();
+                //$('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+
+            }
+
+            else if (seleted_option == 'Mathara') {
+                $('#Cities_mathara').show();
+
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                //$('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+
+            }
+
+
+            else if (seleted_option == 'Gampaha') {
+                $('#Cities_gampha').show();
+
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                //$('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+            }
+
+
+            else if (seleted_option == 'Jaffna') {
+                $('#Cities_jaffna').show();
+
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                //$('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+            else if (seleted_option == 'Kilinochchi') {
+                $('#Cities_kilinochchi').show();
+
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+            }
+
+            else if (seleted_option == 'Mannar') {
+                $('#Cities_Mannar').show();
+
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+            }
+
+            else if (seleted_option == 'Mullaitivu') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').show();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+            }
+
+            else if (seleted_option == 'Vavuniya') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').show();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+
+            }
+
+            else if (seleted_option == 'Puttalam') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').show();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+            else if (seleted_option == 'Kurunegala') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').show();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Kalutara') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').show();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Anuradhapura') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').show();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Polonnaruwa') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').show();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Matale') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').show();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Kandy') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').show();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Nuwara_Eliya') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').show();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Kegalle') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').show();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Ratnapura') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').show();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Trincomalee') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').show();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Batticaloa') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').show();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Ampara') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').show();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Badulla') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').show();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Monaragala') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').show();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Hambantota') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').show();
+                $('#Cities_Galle').hide();
+            }
+
+
+            else if (seleted_option == 'Galle') {
+                $('#selected_nothing').hide();
+                $('#Cities_colombo').hide();
+                $('#Cities_mathara').hide();
+                $('#Cities_gampha').hide();
+                $('#Cities_jaffna').hide();
+                $('#Cities_kilinochchi').hide();
+                $('#Cities_Mannar').hide();
+                $('#Cities_Mullaitivu').hide();
+                $('#Cities_Vavuniya').hide();
+                $('#Cities_Puttalam').hide();
+                $('#Cities_Kurunegala').hide();
+                $('#Cities_Kalutara').hide();
+                $('#Cities_Anuradhapura').hide();
+                $('#Cities_Polonnaruwa').hide();
+                $('#Cities_Matale').hide();
+                $('#Cities_Kandy').hide();
+                $('#Cities_Nuwara_Eliya').hide();
+                $('#Cities_Kegalle').hide();
+                $('#Cities_Ratnapura').hide();
+                $('#Cities_Trincomalee').hide();
+                $('#Cities_Batticaloa').hide();
+                $('#Cities_Ampara').hide();
+                $('#Cities_Badulla').hide();
+                $('#Cities_Monaragala').hide();
+                $('#Cities_Hambantota').hide();
+                $('#Cities_Galle').show();
+            }
+
+        });
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
